@@ -42,7 +42,7 @@ threading.Thread(target=run_flask, daemon=True).start()
 
 # ---------------- MINER ----------------
 twitch_miner = TwitchChannelPointsMiner(
-    username="xgale58384",
+    username="xGale58384",
     password="Splashing8-Cheese5-Escargot5-Distrust6-Uranium8",
     claim_drops_startup=False,
     priority=[
@@ -134,7 +134,7 @@ def export_points_loop():
             # send to website
             try:
                 requests.post(
-                    "https://render-b1yk.onrender.com/api/update",
+                    "https://render-1-ethy.onrender.com/api/update",
                     json=data,
                     timeout=10
                 )
@@ -156,7 +156,7 @@ threading.Thread(target=export_points_loop, daemon=True).start()
 # ---------------- RUN -----------------
 twitch_miner.mine(
     [
-        Streamer("imshayph"),
+        Streamer("shayph"),
         Streamer("sirdapper"),
         Streamer("waffletrades_"),
     ],
